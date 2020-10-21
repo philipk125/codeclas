@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>SLIDER APP</title>
+    </head>
+    <body style="background-color:black; padding-top: 80px">
+        <center>
+            <div>
+                <img src="images/dp1.JPG" id="thumbnails" width="250px" height="200px"/>
+                <img src="images/dp2.jpg" id="thumbnails" width="250px" height="200px"/>
+                <img src="images/dp3.jpg" id="thumbnails" width="250px" height="200px"/>
+                <img src="images/dp4.jpg" id="thumbnails" width="250px" height="200px"/>
+                <img src="images/dp5.jpg" id="thumbnails" width="250px" height="200px"/>
+                <hr>
+                <img src="images/dp1.JPG" onmouseover="stop()" onmouseout="slider()" id="main" >
+            </div>
+        </center>
+          
+        <script type="text/javascript">
+           //an array to hold all images
+        var images = [
+            "images/dp1.JPG",
+            "images/dp2.JPG",
+            "images/dp3.JPG",
+            "images/dp4.JPG",
+            "images/dp5.JPG"
+        ]
+        
+        var counter = 0;
+        function slider(){
+            if(counter <= 4) {
+                document.getElementById("main").setAttribute("src", images[counter]);
+                counter++;
+            } else {
+                counter = 0;
+            }
+        }
+        var interval = setInterval(slider, 1000);
+
+        function stop(){
+            clearInterval(interval);
+        }
+     
+       </script>
+    </body>
+</html>

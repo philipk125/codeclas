@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>JS OBJECT</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+        function car(color, shape, tyres, brand, modal, type, door, seat, headlight, sidemirror, sterring, wipers, trucks, burnet, color, windshield, shape ){
+           this.color = color,
+           this.shape = shape,
+           this.tyres = tyres,
+           this.brand = brand,
+           this.model = modal,
+           this.type = type,
+           this.door = door,
+           this.seat = seat,
+           this.headlight = headlight,
+           this.sidemirror = sidemirror,
+           this.sterring = sterring,
+           this.wipers = wipers
+           this.trucks = trucks,
+           this.burnet = burnet,
+           this.color = color,
+           this.windshield = windshield
+        }
+
+        car.prototype.forward = function(){
+            console.log(this.brand +  " is moving forward........");
+        }
+        car.prototype.rotating = function(){
+            console.log(this.brand + " have a rotating sterring");
+        }
+        car.prototype.tinted = function(){
+            console.log(this.brand + " have a  tinted glass");
+        }
+        car.prototype.viewimg = function(){
+            console.log(this.sidemirror + " is for viewing");
+        }
+        car.prototype.speed = function(){
+            console.log(this.brand + " is speeding");
+        }
+        car.prototype.jerk = function(){
+            console.log(this.brand + " is jerking");
+        }
+
+        //instantiate
+        var car1 = new car('blue', 'octagon', 4, 'Toyota', 'camry2020', 'SUV')
+        var car2 = new car('red', 'decagon', 6, 'Honda', 'Accord', 'SUV')
+        var car3 = new car('white', 'hexagonal', 4, 'Lexus', 'lexus2019', 'salon') 
+        
+        car1.forward();
+        car2.forward();
+        car3.tinted();
+        car2.rotating();
+        car3.forward();
+        car3.speed();
+        car3.jerk(); 
+
+        // function bicycle(brand, type, shape, colour, pedal, brake, chain, spoke, gear, carrier, handle, mirror, bulb, seat, tyres){
+        //     this.brand = brand,
+        //     this.type = type,
+        //     this.carrier = carrier,
+        //     this.chain = chain,
+        //     this.colour = colour,
+        //     this.handle = handle,
+        //     this.seat = seat,
+        //     this.pedal = pedal,
+        //     this.mirror = mirror,
+        //     this.gear = gear,
+        //     this.spoke = spoke,
+        //     this.tyres = tyres,
+        //     this.shape = shape,
+        //     this.brake = brake,
+        //     this.chain = chain
+        // }
+
+        // bicycle.prototype.move = function(){
+        //     console.log(this.brand + ' is moving');
+        // }
+
+        // //instantiate
+        // var bicycle1 = new bicycle('BMX', 'BMX2020', 'triangle', 'yellow', 2)
+        
+        // bicycle1.move();
+        
+        
+        </script>
+    </body>
+</html>

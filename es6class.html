@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>es6 class</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        class car{
+            constructor(color, brand, shape){
+                this.color = color;
+                this.brand = brand;
+                this.shape = shape;
+            }
+            feature(){
+                console.log('the '  +  this.brand + ' is ' +  this.color)
+            }
+        }
+        
+        let car1 = new car('blue', 'Toyota', 'octagon')
+        car1.feature();
+        let car2 = new car('red', 'Honda', 'hexagon')
+        car2.feature();
+
+    
+        </script>
+    </body>
+</html>>

@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>lexical scope</title>
+    </head>
+    <body>
+        <p id="phi1"></p>
+        <p id="phi2"></p>
+        <script type="text/javascript">
+        
+
+        // function foo(a){
+        //     var b = a*2
+        //     function bar(c){
+        //         console.log(a, b, c);
+        //     }
+        //     bar(b*3);
+        // }
+        // foo(2)
+       
+       //local scope
+    //    myFunction();
+    //    function myFunction(){
+    //        var carName="Benz";
+    //        var carName="Volvo"
+    //        document.getElementById("phi1").innerHTML = "i bought a new " + carName;
+    //    } 
+       // global scope
+       var carName="Toyota";
+       myFunction();
+       function myFunction(){
+           document.getElementById("phi1").innerHTML = "moving" + carName;
+       }
+       document.getElementById("phi1").innerHTML = "moving" + carName;
+
+       
+            
+        </script>
+    </body>
+</html>

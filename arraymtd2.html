@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>JS ARRAY METHOD</title>
+    </head>
+    <body>
+        <h2>JAVA ARRAY METHOD</h2>
+        <button onClick="myfunction()">Click here</button>
+        <p id="item"></p>
+        
+        <script type="text/javascript">
+
+        var carNames = ["honda", "toyota", "highlander", "hyundai", "benz", "mazda"];
+        document.getElementById("item"). innerHTML = carNames;
+
+        function myfunction() {
+            carNames.push("ferrari");
+            document.getElementById("item"). innerHTML = carNames;
+    
+        }
+        // 
+        // function myfunction() {
+        //     carNames.shift("honda");
+        //     document.getElementById("item"). innerHTML = carNames;
+
+        // }
+        // function myfunction() {
+        //     carNames.pop("mazda");
+        //     document.getElementById("item"). innerHTML = carNames;
+
+        // }
+        // function myfunction() {
+        //     carNames[0] = "bicycle";
+        //     document.getElementById("item"). innerHTML = carNames;
+ 
+        // }
+        </script>
+    </body>
+</html>

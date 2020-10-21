@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>ATM OBJECT</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        
+        class ATM{
+            constructor(accountBalance, sound, location, bank, thumbprint, currency, keypad, screenLayout){
+                this.accountBalance = accountBalance;
+                this.sound = sound;
+                this.location = location;
+                this.bank = bank;
+                this.thumbprint = thumbprint;
+                this.currency = currency;
+                this.keypad = keypad;
+                this.screenLayout = screenLayout;
+            }
+            
+            deposit(amount){
+                this.accountBalance=this.accountBalance+amount;
+            }
+
+            balance(){
+                return this.accountBalance;
+            }
+
+            withdraw(amount){
+                return this.accountBalance = this.withdraw - amount;
+            }
+            //method
+            dispense(pin, amount){
+                if(pin && pin==1234){
+                 return this.withdraw (amount);
+                }
+                else{return 'please enter your pin!'}
+            }
+            transfer(){
+
+            }
+            payBills(){
+
+            }
+        }
+
+        let philip = new ATM(20000, true, "Romi", "Polaris", true, 500, "square", "horizontal");
+        console.log(philip.dispense(1234,4000)); 
+        
+        
+
+
+        </script>
+    </body>
+</html>

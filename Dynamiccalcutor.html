@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>DYNAMIC CALCULATOR</title>
+    </head>
+    <body style="background-color:brown; padding-top: 150px;">
+        <center>
+            <hi>The select element</hi>
+            <p>The select element is used to create a drop-down list.</p>
+            
+                <input type="text" id="num1" placeholder="num1"/>
+                
+             
+                <select name="BODMAS" id="bodmas">
+                    <option value="+">Addtion</option>
+                    <option value="-">Subtraction</option>
+                    <option value="*">Multiplication</option>
+                    <option value="/">Division</option>
+                    <option value="**">exponentiator</option>
+                </select>
+
+                <input type="text" id="num2" placeholder="num2"/>
+                
+                    <br><br>
+                    <button onmouseenter="dynamicCal()">submit</button>
+                   
+        </center>
+        <script type="text/javascript">
+    function dynamicCal(){
+    
+        var number1=document.getElementById("num1").value;
+        var number2=document.getElementById("num2").value;
+        var sign=document.getElementById("bodmas").value;
+        switch(sign){
+            case '+': 
+            result=Number(number1)+Number(number2);
+            break;
+            case '-':
+            result=Number(number1)-Number(number2);
+            break;
+            case '*':
+            result=Number(number1)*Number(number2);
+            break;
+            case '/':
+            result=Number(number1)/Number(number2);
+            break;
+            case '**':
+            result=Number(number1)**Number(number2);
+            
+        }
+        alert(result);
+    }
+        
+
+        </script>
+    </body>
+</html>

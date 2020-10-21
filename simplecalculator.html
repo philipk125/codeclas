@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>SIMPLE CALCULATOR</title>
+    </head>
+    <body style="background-color: blueviolet; padding-top: 150px;">
+        
+        <center>
+         <input type="text" id="type1" placeholder="num1"/>
+         +
+         <input type="text" id="type2" placeholder="num2"/>
+         <br>
+         <br>
+         <button onClick="ADDER()" style="width: 400px; background-color: brown">ADD</button>   
+        
+        </center>
+        <script type="text/javascript">
+        //function to handle the addition
+        //creation phase 
+        function ADDER(){
+          //STEP 1 - //get the input value from the form input 1
+          var value1 = document.getElementById
+          ("type1").value;
+         
+          //STEP 2 - //get the input value from the form input 2
+          var value2 = document.getElementById
+          ("type2").value;
+          
+          //add value1 and value2
+          var total = Number(value1) + Number(value2);
+
+          //alert the total value
+          alert(total);
+        
+      
+        }
+       
+
+       </script>
+
+    </body>
+</html>
